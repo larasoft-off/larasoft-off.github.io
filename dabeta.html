@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Form Menjadi Mitra - SILOKERNF</title>
+    <title>Daftar Berita - SILOKERNF</title>
     <link rel="icon" type="image/png" href="https://thumbs.gfycat.com/HandmadeFavoriteIndianringneckparakeet-small.gif">
 
     <!-- Bootstrap CSS -->
@@ -16,13 +16,10 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <!-- My Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Josefin+Slab:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Work+Sans:wght@400&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
-
 </head>
 <body>
   <!-- Header -->
@@ -34,7 +31,7 @@
   <!-- /Header -->
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
       <a class="navbar-brand" href="index.html">SILOKERNF</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,8 +48,8 @@
           <li class="nav-item">
               <a class="nav-link" href="isi_loker.html">Isi Loker</a>
           </li>
-          <li class="nav-item active">
-              <a class="nav-link" href="DaftarMitra.html">Daftar Mitra<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+              <a class="nav-link" href="DaftarMitra.html">Daftar Mitra</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="berita.html">Berita</a>
@@ -77,82 +74,79 @@
       <nav aria-label="breadcrumb" style="padding-top: 30px;">
         <ol class="breadcrumb bread justify-content-end bg-white">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="DaftarMitra.html">Daftar Mitra</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Form Menjadi Mitra</li>
+        <li class="breadcrumb-item"><a href="admin.html">Admin</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Daftar Berita</li>
         </ol>
     </nav>
   </div>
 
   <div class="container">
-    <fieldset style="background-color: white;">
-      <legend> Form Menjadi Mitra </legend>
-      
-      <div class="container">
-
-        <form  class="formm">
-          <div class="form-group row">
-              <label for="user" class="col-sm-3 col-form-label">Nama Perusahaan/Organisasi</label>
-              <div class="col-sm">
-                <input type="text" class="form-control" id="username" required placeholder="">
-              </div>
-          </div>
-
-          <div class="form-group row">
-            <label for="select" class="col-3 col-form-label">Bidang Usaha</label> 
-            <div class="col-sm-3">
-              <select id="select" name="select" class="custom-select">
-                <option value="pegadaian">Pengadaian</option>
-                <option value="empty">Empty</option>
-                <option value="empty">Empty</option>
-                <option value="empty">Empty</option>
-              </select>
-            </div>
-          </div> 
-
-            <div class="form-group row">
-              <label for="text-area" class="col-sm-3 col-form-label">Alamat Kantor</label>
-              <div class="col-sm">
-                <textarea class="form-control" id="text-area" rows="3" required placeholder=""></textarea>
-              </div>  
-          </div>
-
-          <div class="form-group row">
-              <label for="number" class="col-3 col-form-label">Kontak Pribadi</label> 
-              <div class="col-sm">
-                <input id="number" name="number" type="number" class="form-control" required placeholder="">
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label for="number" class="col-3 col-form-label">No. HP/Telpon</label> 
-              <div class="col-sm">
-                <input id="number" name="number" type="text" class="form-control" required placeholder="">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="email" class="col-3 col-form-label">Email</label> 
-              <div class="col-sm">
-                <input id="email" name="email" type="email" class="form-control" required placeholder="">
-              </div>
-            </div> 
-
-            <div class="form-group row">
-              <label for="web" class="col-3 col-form-label">Alamat Web</label> 
-              <div class="col-sm">
-                <input id="web" name="web" type="web" class="form-control" required placeholder="http://">
-              </div>
-            </div> 
-
-            <br>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Daftar</button> <!--belum di arahkan ke selesai pengisisan-->
-              <button class="btn btn-danger" type="reset">Reset</button>  <!--belum di arahkan ke windows alert-->
-            </div>
-            <br>
-        </form>
-
-    </fieldset>
-    
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover text-center bg-white">
+        <thead>
+          <tr class="table-secondary">
+            <th>No</th>
+            <th>Nama Penerbit</th>
+            <th>Tanggal Terbit</th>
+            <th>Asal Kampus</th>
+            <th>Email</th>
+            <th>Telepon</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Fajar Siddiq</td>
+            <td>11 Januari 2021/13.00WIB</td>
+            <td>NurulFikri</td>
+            <td>siddiq251@gmail.com</td>
+            <td>082298227422</td>
+            <td><a href="berita1.html">View</a></br>
+            </a> <a href="#">Edit </a></br>
+            <a href="#">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <tr>
+                <td>2</td>
+                <td>Zulkarnain</td>
+                <td>18 Januari 2021/13.00WIB</td>
+                <td>NurulFikri</td>
+                <td>zulpanzul11@gmail.com</td>
+                <td>082298227422</td>
+                <td><a href="berita2.html">View</a></br>
+                </a> <a href="#">Edit </a></br>
+                <a href="#">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Luthfi.S</td>
+                <td>15 Desember 2020/13.00WIB</td>
+                <td>NurulFikri</td>
+                <td>lutfiafi99@gmail.com</td>
+                <td>082298227422</td>
+                <td><a href="berita3.html">View</a></br>
+                </a> <a href="#">Edit </a></br>
+                <a href="#">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Nadhira</td>
+                <td>15 Januari 2021/13.00WIB</td>
+                <td>NurulFikri</td>
+                <td>nadhnadh56@gmail.com</td>
+                <td>082298227422</td>
+                <td><a href="berita4.html">View</a></br>
+                </a> <a href="#">Edit </a></br>
+                <a href="#">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
     <!-- Keloker -->
